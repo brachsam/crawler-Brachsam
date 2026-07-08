@@ -1,0 +1,1884 @@
+{
+  "tests": 330,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DynamicArrayInsertDeathTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "InsertNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 61
+        },
+        {
+          "name": "InsertPastEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "name": "SinglySize",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "EmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 5
+        },
+        {
+          "name": "SizeAfterInsertFront",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 12
+        },
+        {
+          "name": "SizeAfterInsertBack",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 23
+        },
+        {
+          "name": "SizeAfterMixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 34
+        },
+        {
+          "name": "SizeNeverNegative",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 48
+        },
+        {
+          "name": "SizeAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 64
+        },
+        {
+          "name": "StressSizeUpdates",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/size.cpp",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "name": "SinglySearch",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "SearchInEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 5
+        },
+        {
+          "name": "SearchExistingElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 12
+        },
+        {
+          "name": "SearchNonExistingElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 25
+        },
+        {
+          "name": "SearchAfterDeletion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 36
+        },
+        {
+          "name": "SearchDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 53
+        },
+        {
+          "name": "SearchNegativeValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 65
+        },
+        {
+          "name": "SearchAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 77
+        },
+        {
+          "name": "StressSearch",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/search.cpp",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "name": "SinglyRemove",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "RemoveFirstElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveLastElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 21
+        },
+        {
+          "name": "RemoveMiddleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 37
+        },
+        {
+          "name": "RemoveMiddleRepeatedly",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 54
+        },
+        {
+          "name": "RemoveUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 70
+        },
+        {
+          "name": "RemoveNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 83
+        },
+        {
+          "name": "RemovePastEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 93
+        },
+        {
+          "name": "RemoveFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 105
+        },
+        {
+          "name": "MixedInsertRemoveOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 115
+        },
+        {
+          "name": "StressRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/removeindex.cpp",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "name": "SinglyInsertFront",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "ReverseOrderCheck",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 5
+        },
+        {
+          "name": "InsertIntoEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 18
+        },
+        {
+          "name": "InsertMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 28
+        },
+        {
+          "name": "InsertLargeNumberOfElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 43
+        },
+        {
+          "name": "InsertDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 56
+        },
+        {
+          "name": "AlternateFrontAndBackInsertion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 69
+        },
+        {
+          "name": "SearchAfterInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 86
+        },
+        {
+          "name": "ContinuousInsertAndRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 100
+        },
+        {
+          "name": "InsertNegativeValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertfront.cpp",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "name": "SinglyInsertBack",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "InsertIntoEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 5
+        },
+        {
+          "name": "InsertMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 15
+        },
+        {
+          "name": "InsertLargeNumberOfElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 30
+        },
+        {
+          "name": "InsertDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 43
+        },
+        {
+          "name": "AlternateFrontBackInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 56
+        },
+        {
+          "name": "DeleteBackAfterInsertion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 73
+        },
+        {
+          "name": "InsertNegativeValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 86
+        },
+        {
+          "name": "ContinuousInsertDelete",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/insertback.cpp",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "name": "SinglyInsert",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "InsertAtBeginning",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 5
+        },
+        {
+          "name": "InsertAtEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 21
+        },
+        {
+          "name": "InsertAtMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 37
+        },
+        {
+          "name": "MultipleMiddleInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 55
+        },
+        {
+          "name": "InsertIntoEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 72
+        },
+        {
+          "name": "InsertNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 82
+        },
+        {
+          "name": "InsertPastEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 92
+        },
+        {
+          "name": "InsertAfterMultipleOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 104
+        },
+        {
+          "name": "InsertDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 123
+        },
+        {
+          "name": "StressInsertMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/indexinsertion.cpp",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "name": "SinglyGet",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "GetFirstElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 5
+        },
+        {
+          "name": "GetLastElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 16
+        },
+        {
+          "name": "GetMiddleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 27
+        },
+        {
+          "name": "GetAfterInsertDeleteOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 37
+        },
+        {
+          "name": "GetFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 53
+        },
+        {
+          "name": "GetNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 63
+        },
+        {
+          "name": "GetIndexEqualToSize",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 75
+        },
+        {
+          "name": "GetLargeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 88
+        },
+        {
+          "name": "StressGet",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 101
+        },
+        {
+          "name": "GetAfterRepeatedRemovals",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/get.cpp",
+          "line": 114
+        }
+      ]
+    },
+    {
+      "name": "DoublyRemoveVal",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "RemoveHead",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveTail",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 20
+        },
+        {
+          "name": "RemoveMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 36
+        },
+        {
+          "name": "RemoveDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 52
+        },
+        {
+          "name": "RemoveValueNotPresent",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 70
+        },
+        {
+          "name": "RemoveFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 82
+        },
+        {
+          "name": "RemoveEveryElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 91
+        },
+        {
+          "name": "RemoveAfterMixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 104
+        },
+        {
+          "name": "StressRemoveVal",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremoveval.cpp",
+          "line": 122
+        }
+      ]
+    },
+    {
+      "name": "DoublyRemove",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "RemoveMiddleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveMiddleRepeatedly",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 22
+        },
+        {
+          "name": "RemoveAfterMixedInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 38
+        },
+        {
+          "name": "RemoveUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 56
+        },
+        {
+          "name": "RemoveInvalidIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 69
+        },
+        {
+          "name": "RemoveNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 81
+        },
+        {
+          "name": "RemoveAfterPreviousDeletions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 91
+        },
+        {
+          "name": "StressRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dremove.cpp",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "name": "DoublyInsert",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "InsertMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 5
+        },
+        {
+          "name": "MultipleMiddleInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 23
+        },
+        {
+          "name": "InsertAfterDeletions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 40
+        },
+        {
+          "name": "InsertAtBeginning",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 57
+        },
+        {
+          "name": "InsertAtEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 73
+        },
+        {
+          "name": "InsertNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 87
+        },
+        {
+          "name": "InsertPastEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 97
+        },
+        {
+          "name": "StressInsertMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/dinsertindex.cpp",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "name": "SinglyDestructor",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "DestroyEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 5
+        },
+        {
+          "name": "DestroySingleNode",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 13
+        },
+        {
+          "name": "DestroyLargeList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 22
+        },
+        {
+          "name": "DestroyAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 32
+        },
+        {
+          "name": "DestroyCopiedLists",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 43
+        },
+        {
+          "name": "DestroyAssignedLists",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 54
+        },
+        {
+          "name": "NestedObjects",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 66
+        },
+        {
+          "name": "MultipleObjects",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/destructor.cpp",
+          "line": 81
+        }
+      ]
+    },
+    {
+      "name": "SinglyDeleteFront",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "DeleteSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 5
+        },
+        {
+          "name": "DeleteFrontMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 13
+        },
+        {
+          "name": "DeleteUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 29
+        },
+        {
+          "name": "DeleteFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 42
+        },
+        {
+          "name": "AlternateInsertDelete",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 52
+        },
+        {
+          "name": "DeleteAfterInsertFront",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 65
+        },
+        {
+          "name": "DeleteAfterMixedInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 81
+        },
+        {
+          "name": "StressDeleteFront",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deletefront.cpp",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "name": "SinglyDeleteBack",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "DeleteSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 5
+        },
+        {
+          "name": "DeleteBackMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 13
+        },
+        {
+          "name": "DeleteBackUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 29
+        },
+        {
+          "name": "DeleteBackFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 42
+        },
+        {
+          "name": "AlternateInsertDelete",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 52
+        },
+        {
+          "name": "DeleteAfterInsertFront",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 65
+        },
+        {
+          "name": "DeleteAfterMixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 81
+        },
+        {
+          "name": "StressDeleteBack",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 100
+        },
+        {
+          "name": "ReuseAfterDeletingAllElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/deleteback.cpp",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "name": "SinglyConstructor",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "EmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 5
+        },
+        {
+          "name": "SearchInEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 12
+        },
+        {
+          "name": "GetFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 19
+        },
+        {
+          "name": "DeleteFrontFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 29
+        },
+        {
+          "name": "DeleteBackFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 39
+        },
+        {
+          "name": "RemoveFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/defaultconstructor.cpp",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "name": "DoublyDeleteBack",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "DeleteSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 5
+        },
+        {
+          "name": "DeleteBackMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 13
+        },
+        {
+          "name": "DeleteUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 26
+        },
+        {
+          "name": "DeleteFromEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 37
+        },
+        {
+          "name": "AlternateFrontBackDeletion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 47
+        },
+        {
+          "name": "DeleteAfterMiddleInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 65
+        },
+        {
+          "name": "ReuseAfterDeletingEverything",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 83
+        },
+        {
+          "name": "StressDeleteBack",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/ddeleteback.cpp",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "name": "SinglyCopyConstructor",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "CopyEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 5
+        },
+        {
+          "name": "CopySingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 12
+        },
+        {
+          "name": "CopyMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 24
+        },
+        {
+          "name": "ModifyOriginalAfterCopy",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 39
+        },
+        {
+          "name": "ModifyCopyOnly",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 59
+        },
+        {
+          "name": "CopyLargeList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 77
+        },
+        {
+          "name": "CopyAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 92
+        },
+        {
+          "name": "MultipleCopies",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/copyconstructor.cpp",
+          "line": 106
+        }
+      ]
+    },
+    {
+      "name": "SinglyClear",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "ClearEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 5
+        },
+        {
+          "name": "ClearSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 12
+        },
+        {
+          "name": "ClearMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 21
+        },
+        {
+          "name": "ReuseAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 32
+        },
+        {
+          "name": "ClearMultipleTimes",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 44
+        },
+        {
+          "name": "ClearAfterMixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 56
+        },
+        {
+          "name": "StressClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 69
+        },
+        {
+          "name": "SearchAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/clear.cpp",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "name": "SinglyAssignment",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "AssignEmptyList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 5
+        },
+        {
+          "name": "AssignSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 15
+        },
+        {
+          "name": "AssignMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 29
+        },
+        {
+          "name": "ModifyOriginalAfterAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 46
+        },
+        {
+          "name": "ModifyAssignedList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 68
+        },
+        {
+          "name": "SelfAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 88
+        },
+        {
+          "name": "AssignOverExistingList",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 103
+        },
+        {
+          "name": "LargeAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 122
+        },
+        {
+          "name": "AssignmentAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/LinkedListTests\/assignmentoperator.cpp",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "name": "HashMapValues",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "EmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 8
+        },
+        {
+          "name": "SingleValue",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 17
+        },
+        {
+          "name": "MultipleValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 29
+        },
+        {
+          "name": "DuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 41
+        },
+        {
+          "name": "ValuesAfterUpdate",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 54
+        },
+        {
+          "name": "ValuesAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 68
+        },
+        {
+          "name": "ValuesAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 85
+        },
+        {
+          "name": "ValuesAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 99
+        },
+        {
+          "name": "MixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 114
+        },
+        {
+          "name": "StressValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/values.cpp",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "name": "HashMapSize",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "InitialSize",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 7
+        },
+        {
+          "name": "SizeAfterInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 13
+        },
+        {
+          "name": "UpdateExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 23
+        },
+        {
+          "name": "SizeAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 35
+        },
+        {
+          "name": "SizeAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 48
+        },
+        {
+          "name": "MixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 60
+        },
+        {
+          "name": "SizeAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 78
+        },
+        {
+          "name": "StressSizeUpdates",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/size.cpp",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "name": "HashMapSet",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "InsertSingleKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 7
+        },
+        {
+          "name": "InsertMultipleKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 17
+        },
+        {
+          "name": "UpdateExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 30
+        },
+        {
+          "name": "InsertNegativeKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 41
+        },
+        {
+          "name": "DuplicateValuesDifferentKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 52
+        },
+        {
+          "name": "TriggerRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 67
+        },
+        {
+          "name": "InsertAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 80
+        },
+        {
+          "name": "SequentialInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 92
+        },
+        {
+          "name": "LargeInsertion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 105
+        },
+        {
+          "name": "UpdateAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/set.cpp",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "name": "HashMapRemove",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "RemoveExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 7
+        },
+        {
+          "name": "RemoveMultipleKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 19
+        },
+        {
+          "name": "RemoveMiddleKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 32
+        },
+        {
+          "name": "RemoveMissingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 50
+        },
+        {
+          "name": "RemoveFromEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 62
+        },
+        {
+          "name": "RemoveAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 72
+        },
+        {
+          "name": "RemoveThenInsertAgain",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 86
+        },
+        {
+          "name": "RemoveAllKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 100
+        },
+        {
+          "name": "MixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 113
+        },
+        {
+          "name": "StressRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/remove.cpp",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "name": "HashMapMerge",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "EmptyIntoEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 7
+        },
+        {
+          "name": "MergeEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 17
+        },
+        {
+          "name": "MergeIntoEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 33
+        },
+        {
+          "name": "MergeDifferentKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 49
+        },
+        {
+          "name": "MergeDuplicateKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 70
+        },
+        {
+          "name": "MergeAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 86
+        },
+        {
+          "name": "MergeLargeMaps",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 105
+        },
+        {
+          "name": "MergeTwice",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 121
+        },
+        {
+          "name": "MergeAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 138
+        },
+        {
+          "name": "StressMerge",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/merge.cpp",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "name": "HashMapLoadFactor",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "InitialLoadFactor",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 7
+        },
+        {
+          "name": "OneInsertion",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 14
+        },
+        {
+          "name": "MultipleInsertions",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 23
+        },
+        {
+          "name": "UpdateExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 33
+        },
+        {
+          "name": "LoadFactorAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 46
+        },
+        {
+          "name": "LoadFactorAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 58
+        },
+        {
+          "name": "LoadFactorAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 70
+        },
+        {
+          "name": "StressLoadFactor",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/loadfactor.cpp",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "name": "HashMapKeys",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "EmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 7
+        },
+        {
+          "name": "SingleKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 16
+        },
+        {
+          "name": "MultipleKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 28
+        },
+        {
+          "name": "KeysAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 43
+        },
+        {
+          "name": "KeysAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 62
+        },
+        {
+          "name": "KeysAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 76
+        },
+        {
+          "name": "MixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 91
+        },
+        {
+          "name": "StressKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/keys.cpp",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "name": "HashMapGet",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "GetExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 7
+        },
+        {
+          "name": "GetMultipleKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 16
+        },
+        {
+          "name": "GetUpdatedValue",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 27
+        },
+        {
+          "name": "GetAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 37
+        },
+        {
+          "name": "GetMissingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 51
+        },
+        {
+          "name": "GetAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 61
+        },
+        {
+          "name": "GetAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 76
+        },
+        {
+          "name": "GetNegativeKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 87
+        },
+        {
+          "name": "StressGet",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 96
+        },
+        {
+          "name": "GetAfterMixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/get.cpp",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "name": "HashMapExists",
+      "tests": 9,
+      "testsuite": [
+        {
+          "name": "ExistingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 7
+        },
+        {
+          "name": "MissingKey",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 14
+        },
+        {
+          "name": "ExistsAfterUpdate",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 21
+        },
+        {
+          "name": "ExistsAfterRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 29
+        },
+        {
+          "name": "ExistsAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 37
+        },
+        {
+          "name": "ExistsAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 50
+        },
+        {
+          "name": "NegativeKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 61
+        },
+        {
+          "name": "StressExists",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 73
+        },
+        {
+          "name": "MixedOperations",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/exists.cpp",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "name": "HashMapConstructor",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "EmptyHashMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 7
+        },
+        {
+          "name": "InitialLoadFactor",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 14
+        },
+        {
+          "name": "EmptyKeys",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 20
+        },
+        {
+          "name": "EmptyValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 27
+        },
+        {
+          "name": "ExistsInEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 34
+        },
+        {
+          "name": "GetFromEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 40
+        },
+        {
+          "name": "RemoveFromEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/defaultConstructor.cpp",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "name": "HashMapClear",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "ClearEmptyMap",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 7
+        },
+        {
+          "name": "ClearSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 16
+        },
+        {
+          "name": "ClearMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 28
+        },
+        {
+          "name": "ReuseAfterClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 43
+        },
+        {
+          "name": "ClearMultipleTimes",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 60
+        },
+        {
+          "name": "ClearAfterRehash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 74
+        },
+        {
+          "name": "MixedOperationsThenClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 88
+        },
+        {
+          "name": "StressClear",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/HashMapTests\/clear.cpp",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "name": "SizeCapacity",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "FreshArrayStartsAtZeroSizeCapFour",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 5
+        },
+        {
+          "name": "SizeGrowsOneAtATimeWithAppend",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 11
+        },
+        {
+          "name": "CapacityNeverShrinksBelowHighWaterMark",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 19
+        },
+        {
+          "name": "SizeAndCapacityStayConsistentAfterInsertRemoveMix",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 28
+        },
+        {
+          "name": "CapacityIsAlwaysPowerOfTwo",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 38
+        },
+        {
+          "name": "CopyAndAssignPreserveSizeExactly",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 47
+        },
+        {
+          "name": "MultipleResizeCycles",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 57
+        },
+        {
+          "name": "SizeNeverNegative",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 74
+        },
+        {
+          "name": "CapacityDoesNotChangeWithoutResize",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 89
+        },
+        {
+          "name": "CapacityDoublesExactly",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 102
+        },
+        {
+          "name": "AssignmentCopiesCapacity",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 116
+        },
+        {
+          "name": "CopyConstructorCopiesCapacity",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/sizecapacity.cpp",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "name": "Remove",
+      "tests": 14,
+      "testsuite": [
+        {
+          "name": "FromBeginning",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 5
+        },
+        {
+          "name": "FromMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 13
+        },
+        {
+          "name": "FromEnd",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 21
+        },
+        {
+          "name": "UntilArrayIsEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 29
+        },
+        {
+          "name": "DoesNotAutoShrinkCapacity",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 36
+        },
+        {
+          "name": "NegativeIndexExitsProgram",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 45
+        },
+        {
+          "name": "OnEmptyArrayExitsProgram",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 53
+        },
+        {
+          "name": "RemoveFirst",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 60
+        },
+        {
+          "name": "RemoveMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 73
+        },
+        {
+          "name": "RemoveLast",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 85
+        },
+        {
+          "name": "RemoveUntilEmpty",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 98
+        },
+        {
+          "name": "RemoveInvalidIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 108
+        },
+        {
+          "name": "RemoveNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 118
+        },
+        {
+          "name": "RepeatedRemoveFromFront",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/remove.cpp",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "name": "Insert",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "AtBeginning",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 5
+        },
+        {
+          "name": "AtMiddle",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 15
+        },
+        {
+          "name": "AtEndEqualsAppend",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 24
+        },
+        {
+          "name": "TriggersResizeWhenFull",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 32
+        },
+        {
+          "name": "NegativeIndexExitsProgram",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 42
+        },
+        {
+          "name": "IndexPastEndExitsProgram",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/insert.cpp",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "name": "Get",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "ReturnsCorrectValuesAtEachIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 5
+        },
+        {
+          "name": "FirstAndLastElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 11
+        },
+        {
+          "name": "ConstOverloadWorks",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 18
+        },
+        {
+          "name": "ReflectsStateAfterInsertAndRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 25
+        },
+        {
+          "name": "NegativeIndexThrowsException",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 35
+        },
+        {
+          "name": "IndexEqualToSizeThrowsException",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 46
+        },
+        {
+          "name": "OnEmptyArrayExitsProgram",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 58
+        },
+        {
+          "name": "GetFirstElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 68
+        },
+        {
+          "name": "GetLastElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 79
+        },
+        {
+          "name": "GetMiddleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 90
+        },
+        {
+          "name": "GetAfterInsertAndRemove",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 100
+        },
+        {
+          "name": "GetNegativeIndex",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/get.cpp",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "name": "Destructor",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "SelfAssignmentThenDestroy",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/destructor.cpp",
+          "line": 5
+        },
+        {
+          "name": "MultipleCopies",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/destructor.cpp",
+          "line": 19
+        },
+        {
+          "name": "ChainAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/destructor.cpp",
+          "line": 35
+        },
+        {
+          "name": "CopyThenModifyOriginal",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/destructor.cpp",
+          "line": 52
+        },
+        {
+          "name": "InsertIntoEmptyThenDestroy",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/destructor.cpp",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "name": "CopyConstructor",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "CopiesAllValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 5
+        },
+        {
+          "name": "IsADeepCopyNotShared",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 13
+        },
+        {
+          "name": "PreservesCapacityToo",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 23
+        },
+        {
+          "name": "WorksOnEmptyArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 30
+        },
+        {
+          "name": "WorksAfterMultipleResizesOnSource",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 36
+        },
+        {
+          "name": "LargeDatasetStress",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 44
+        },
+        {
+          "name": "CopyEmptyArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 51
+        },
+        {
+          "name": "CopySingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 61
+        },
+        {
+          "name": "CopyMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 73
+        },
+        {
+          "name": "ModifyOriginalAfterCopy",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 88
+        },
+        {
+          "name": "ModifyCopyDoesNotAffectOriginal",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 106
+        },
+        {
+          "name": "CopyLargeArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/copyconstructor.cpp",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "name": "Assignment",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "CopiesAllValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 5
+        },
+        {
+          "name": "SelfAssignmentDoesNotCorruptData",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 15
+        },
+        {
+          "name": "IsADeepCopyNotShared",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 23
+        },
+        {
+          "name": "OverwritesExistingLargerData",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 32
+        },
+        {
+          "name": "ChainedAssignmentWorks",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 44
+        },
+        {
+          "name": "EmptyAssignedIntoNonEmptyClearsIt",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 55
+        },
+        {
+          "name": "AssignEmptyArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 63
+        },
+        {
+          "name": "AssignNonEmptyArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 74
+        },
+        {
+          "name": "ModifyOriginalAfterAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 90
+        },
+        {
+          "name": "ModifyAssignedArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 109
+        },
+        {
+          "name": "SelfAssignment",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 130
+        },
+        {
+          "name": "AssignLargeArray",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/assignment.cpp",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayAppendTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "AppendOneElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 5
+        },
+        {
+          "name": "AppendMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 15
+        },
+        {
+          "name": "AppendTriggersResize",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 28
+        },
+        {
+          "name": "AppendLargeDataset",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 43
+        },
+        {
+          "name": "AppendDuplicateValues",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 56
+        },
+        {
+          "name": "AppendNegativeNumbers",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/external\/ds_library-Brachsam\/tests\/DynamicArrayTests\/append.cpp",
+          "line": 69
+        }
+      ]
+    }
+  ]
+}

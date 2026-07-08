@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/CollectionTests_e3b0c442_tests.cmake")
+  include("C:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/CollectionTests_e3b0c442_tests.cmake")
+else()
+  add_test(CollectionTests_NOT_BUILT CollectionTests_NOT_BUILT)
+endif()
