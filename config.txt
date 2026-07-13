@@ -1,0 +1,28 @@
+# Web Crawler Configuration
+# Crawler Settings
+
+# Maximum crawl depth.
+max_depth=3
+
+# Database Settings, SQLite database file
+db_path=data/crawler.db
+
+# Logger Settings
+# Log file location.
+# Leave it empty if you only want console logs.
+log_file=logs/crawler.log
+
+# Minimum log level.
+# Options: debug, info, warn, error
+log_level=info
+
+# Crawl Delay
+# Delay (in milliseconds) between two requests.
+crawl_delay_ms=500
+
+# Page Fetcher Settings
+# URL of the Browser Adapter service.
+browser_adapter_url=http://localhost:3000
+
+# Maximum time (in milliseconds) to wait for a page to load.
+fetch_timeout_ms=30000
