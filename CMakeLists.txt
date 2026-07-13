@@ -2,28 +2,89 @@ cmake_minimum_required(VERSION 3.15)
 
 project(WebCrawler)
 
+# ==========================
+# C++ Standard
+# ==========================
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # ==========================
+# Toolchain / MSYS2 Prefix Path Configuration
+# ==========================
+# Force CMake to search for libraries and packages inside MSYS2 UCRT64 prefix.
+list(APPEND CMAKE_PREFIX_PATH "C:/msys64/ucrt64")
+
+# ==========================
+# Export Compile Commands
+# ==========================
+# Enable generation of compile_commands.json for language servers/IDEs.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# ==========================
+# Copy Third-Party Dependencies / Vendor Headers
+# ==========================
+# Copying of vendor/json.hpp removed. nlohmann_json is now imported as a package.
+
+# ==========================
 # Import Project-01 Library
+# ==========================
+# Include the Collections library from Project-01.
 add_subdirectory(external/ds_library-Brachsam)
 
 # ==========================
-# Include Header Files
-target_include_directories(Collections
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+# Find Third-Party Packages
+# ==========================
+# Find SQLite3 for persistent page storage.
+find_package(SQLite3 REQUIRED)
+
+# Find CURL for network/HTTP fetches.
+find_package(CURL REQUIRED)
+
+# Find nlohmann_json.
+find_package(nlohmann_json REQUIRED)
+
+# ==========================
+# Source Files
+# ==========================
+# List all source files in the project to compile.
+set(SOURCES
+    src/main.cpp
+    src/frontier.cpp
+    src/URLNormalizer.cpp
+    src/URLValidator.cpp
+    src/robotsHandler.cpp
+    src/pagestorage.cpp
+    src/configmanager.cpp
+    src/logger.cpp
+    src/seenstore.cpp
+    src/pagefetcher.cpp
+    src/htmlParser.cpp
+    src/kmp.cpp
+    src/crawler.cpp
+    src/crawlSchedular.cpp
 )
 
 # ==========================
-# WebCrawler Executable
-add_executable(WebCrawler
-    src/main.cpp
-    src/URLNormalizer.cpp
+# Executable
+# ==========================
+add_executable(WebCrawler ${SOURCES})
+
+# ==========================
+# Include Directories
+# ==========================
+target_include_directories(WebCrawler
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
+# ==========================
+# Link Libraries
+# ==========================
+# Link the executable with required third-party and custom libraries.
 target_link_libraries(WebCrawler
     PRIVATE
-    Collections
+        Collections
+        SQLite3::SQLite3
+        CURL::libcurl
+        nlohmann_json::nlohmann_json
 )
