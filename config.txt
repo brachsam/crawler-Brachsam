@@ -2,7 +2,7 @@
 # Crawler Settings
 
 # Maximum crawl depth.
-max_depth=3
+max_depth=2
 
 # Database Settings, SQLite database file
 db_path=data/crawler.db
