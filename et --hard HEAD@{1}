@@ -1,0 +1,34 @@
+[33m37eb2da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33mecb0390[m HEAD@{1}: commit: Document daily design decisions and reflections
+[33me0c2cdb[m HEAD@{2}: reset: moving to HEAD~3
+[33m37eb2da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{3}: reset: moving to HEAD~3
+[33mde1299b[m HEAD@{4}: commit: Ignore generated SQLite database files
+[33m90c79d9[m HEAD@{5}: commit (amend): Document daily design decisions and reflections
+[33m47432a4[m HEAD@{6}: commit: Document daily design decisions and reflections
+[33m87c54f0[m HEAD@{7}: commit: Testing of Integrated Crawler using test urls
+[33m37eb2da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{8}: commit: Updated Test cases for individual components
+[33m65221f7[m HEAD@{9}: commit: Modified config.txt to depth 2
+[33m97cbb2e[m HEAD@{10}: commit: Pipeline connection, infinite circular loop resolution & end-to-end testing
+[33me0c2cdb[m HEAD@{11}: commit: Integration with PageStorage, URLNormalizer & URLValidator
+[33m9cabdbf[m HEAD@{12}: commit: KMP & HTMLParser implementation
+[33m8eab7fc[m HEAD@{13}: commit: Algorithm comparison & KMP choice justification
+[33m1056afc[m HEAD@{14}: commit: Added components of headless browser
+[33m4f8475b[m HEAD@{15}: commit: Configure CMake for crawler project structure
+[33m8eb2b83[m HEAD@{16}: commit: Merged all the components together
+[33mae7c638[m HEAD@{17}: commit: Connected SQLite Database
+[33m2fc272e[m HEAD@{18}: commit: finalized and added crawl schedular
+[33m9a6cc73[m HEAD@{19}: commit: Added Robots Handler
+[33m80f42d6[m HEAD@{20}: commit: Added HTML Parser
+[33mc083b96[m HEAD@{21}: commit: Added Page Fetcher
+[33mfc77bd3[m HEAD@{22}: commit: Added Page Storage
+[33m1aa0d09[m HEAD@{23}: commit: Implemented Logger
+[33mabba098[m HEAD@{24}: commit: Implemented Configuration Manager
+[33me15b1cb[m HEAD@{25}: commit: Implemented Frontier using queue wrapper class
+[33me9d20ae[m HEAD@{26}: commit: Implemented URL Validator
+[33m884fd0c[m HEAD@{27}: commit: Add common models, shared fata structures and implemented URL Normalizer
+[33m3b50cbf[m HEAD@{28}: reset: moving to HEAD~2
+[33mc18fce5[m HEAD@{29}: commit: Implement PageFetcher and PageStorage; begin HTML parser
+[33m560b590[m HEAD@{30}: commit: Implemented Frontier, SeenStore, Logger, ConfigManager, and RobotsHandler
+[33m3b50cbf[m HEAD@{31}: commit: Finalize crawler architecture and implement core utility components
+[33m8418b3c[m HEAD@{32}: Branch: renamed refs/heads/master to refs/heads/main
+[33m8418b3c[m HEAD@{34}: commit (initial): Added Final Architecture of crawler, updated buildlogs

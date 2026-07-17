@@ -1,0 +1,342 @@
+{
+  "tests": 60,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "PageStorageTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "IsEmptyOnCreation",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 20
+        },
+        {
+          "name": "SaveSinglePage",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 26
+        },
+        {
+          "name": "RetrieveSavedPage",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 35
+        },
+        {
+          "name": "CheckPageExists",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 48
+        },
+        {
+          "name": "UpdatePageOnConflict",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 58
+        },
+        {
+          "name": "RetrieveMissingPageThrows",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 75
+        },
+        {
+          "name": "SaveMultiplePages",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 81
+        },
+        {
+          "name": "QuoteInjectionSafety",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 94
+        },
+        {
+          "name": "SaveEmptyHTMLPayload",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 104
+        },
+        {
+          "name": "StressWriteManyPages",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "name": "HTMLParserTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "EmptyHtmlInput",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "ExtractDoubleQuotedLink",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 12
+        },
+        {
+          "name": "ExtractSingleQuotedLink",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 21
+        },
+        {
+          "name": "HrefSpacingVariants",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 30
+        },
+        {
+          "name": "ExtractMultipleLinks",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 39
+        },
+        {
+          "name": "AnchorWithoutHref",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 50
+        },
+        {
+          "name": "AnchorWithMultipleAttributes",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 58
+        },
+        {
+          "name": "CaseInsensitiveTagMatching",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 67
+        },
+        {
+          "name": "CaseInsensitiveAttributeMatching",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 76
+        },
+        {
+          "name": "MalformedHTMLParsing",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/HTMLParserTests.cpp",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "name": "URLValidatorTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "ValidHttpURL",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "ValidHttpsURL",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 12
+        },
+        {
+          "name": "SchemeCaseInsensitivity",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 19
+        },
+        {
+          "name": "EmptyURLRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 26
+        },
+        {
+          "name": "JavascriptLinksRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 32
+        },
+        {
+          "name": "MailtoLinksRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 39
+        },
+        {
+          "name": "BareFragmentsRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 46
+        },
+        {
+          "name": "MissingProtocolRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 53
+        },
+        {
+          "name": "UnsupportedProtocolsRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 60
+        },
+        {
+          "name": "ShortInvalidStringsRejected",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLValidatorTests.cpp",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "name": "URLNormalizerTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "AbsoluteURLUnchanged",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "RemoveFragments",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 12
+        },
+        {
+          "name": "LowercaseSchemeAndHost",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 20
+        },
+        {
+          "name": "ResolvePlainRelativeURL",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 27
+        },
+        {
+          "name": "ResolveRootRelativeURL",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 34
+        },
+        {
+          "name": "ResolveParentDirectoryRelativeURL",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 41
+        },
+        {
+          "name": "RemoveRedundantTrailingSlash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 48
+        },
+        {
+          "name": "PreservesRootTrailingSlash",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 55
+        },
+        {
+          "name": "RemoveEmptyQueryString",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 62
+        },
+        {
+          "name": "PreservesValidQueryParameters",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/URLNormalizerTests.cpp",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "name": "SeenStoreTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "IsEmptyOnCreation",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "MarkSingleSeen",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "DuplicateMarkingDoesNotGrowSize",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 22
+        },
+        {
+          "name": "MultipleDifferentURLs",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 35
+        },
+        {
+          "name": "UnvisitedReturnsFalse",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 48
+        },
+        {
+          "name": "CaseSensitivityChecked",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 56
+        },
+        {
+          "name": "EmptyStringAllowed",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 66
+        },
+        {
+          "name": "LongURLAllowed",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 75
+        },
+        {
+          "name": "SpecialCharactersPreserved",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 86
+        },
+        {
+          "name": "StressMultipleMarks",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/SeenStoreTests.cpp",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "name": "FrontierTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "IsEmptyOnCreation",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 5
+        },
+        {
+          "name": "EnqueueSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 12
+        },
+        {
+          "name": "DequeueSingleElement",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 21
+        },
+        {
+          "name": "FIFOOrderMultipleElements",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 34
+        },
+        {
+          "name": "DequeueEmptyThrowsException",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 47
+        },
+        {
+          "name": "ExceptionMessageVerification",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 53
+        },
+        {
+          "name": "MixedEnqueueAndDequeue",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 64
+        },
+        {
+          "name": "SizeTrackingAccurate",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 79
+        },
+        {
+          "name": "DuplicatesAllowed",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 95
+        },
+        {
+          "name": "DepthPreservation",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/FrontierTests.cpp",
+          "line": 106
+        }
+      ]
+    }
+  ]
+}

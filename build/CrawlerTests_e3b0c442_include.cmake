@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests_e3b0c442_tests.cmake")
+  include("C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests_e3b0c442_tests.cmake")
+else()
+  add_test(CrawlerTests_NOT_BUILT CrawlerTests_NOT_BUILT)
+endif()
