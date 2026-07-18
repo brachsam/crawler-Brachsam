@@ -117,3 +117,85 @@ TEST_F(PageStorageTest, StressWriteManyPages) {
     }
     EXPECT_EQ(storage.count(), 100);
 }
+
+// 11. Test saving and loading pending URLs.
+TEST_F(PageStorageTest, PendingUrlsSaveAndLoad) {
+    PageStorage storage(dbPath);
+    EXPECT_EQ(storage.pendingCount(), 0);
+
+    storage.savePendingUrl("http://url1.com", 1, "http://parent.com");
+    storage.savePendingUrl("http://url2.com", 2, "http://parent.com");
+    storage.savePendingUrl("http://url1.com", 3, "http://parent.com"); // Duplicate url, ON CONFLICT DO NOTHING
+
+    EXPECT_EQ(storage.pendingCount(), 2);
+
+    DynamicArray<URLDepth> pending = storage.loadPendingUrls(10);
+    ASSERT_EQ(pending.size(), 2);
+    EXPECT_EQ(pending.get(0).url, "http://url1.com");
+    EXPECT_EQ(pending.get(0).depth, 1);
+    EXPECT_EQ(pending.get(1).url, "http://url2.com");
+    EXPECT_EQ(pending.get(1).depth, 2);
+}
+
+// 12. Test updating status of pending URLs.
+TEST_F(PageStorageTest, UpdatePendingUrlStatus) {
+    PageStorage storage(dbPath);
+    storage.savePendingUrl("http://url1.com", 1);
+    storage.savePendingUrl("http://url2.com", 2);
+
+    EXPECT_EQ(storage.pendingCount(), 2);
+
+    // Mark url1 as IN_PROGRESS (1)
+    storage.updatePendingUrlStatus("http://url1.com", 1);
+    EXPECT_EQ(storage.pendingCount(), 1); // Only url2 should be pending now
+
+    // Mark url2 as COMPLETED (2)
+    storage.updatePendingUrlStatus("http://url2.com", 2);
+    EXPECT_EQ(storage.pendingCount(), 0); // No pending URLs left
+}
+
+// 13. Test recovery resetting IN_PROGRESS URLs back to PENDING.
+TEST_F(PageStorageTest, ResetInProgressUrls) {
+    PageStorage storage(dbPath);
+    storage.savePendingUrl("http://url1.com", 1);
+    storage.savePendingUrl("http://url2.com", 2);
+
+    storage.updatePendingUrlStatus("http://url1.com", 1); // IN_PROGRESS
+    storage.updatePendingUrlStatus("http://url2.com", 2); // COMPLETED
+
+    EXPECT_EQ(storage.pendingCount(), 0); // both url1 and url2 are no longer pending
+
+    storage.resetInProgressUrls(); // resets in progress URLs back to pending
+    EXPECT_EQ(storage.pendingCount(), 1); // only url1 (which was in-progress) is now pending
+}
+
+// 14. Test seen URLs retrieval across pages and pending_urls tables.
+TEST_F(PageStorageTest, GetAllSeenUrls) {
+    PageStorage storage(dbPath);
+    storage.savePage({"http://crawled1.com", 1, "html"});
+    storage.savePage({"http://crawled2.com", 2, "html"});
+
+    storage.savePendingUrl("http://pending1.com", 1);
+    storage.savePendingUrl("http://pending2.com", 2);
+
+    DynamicArray<std::string> seen = storage.getAllSeenUrls();
+    EXPECT_EQ(seen.size(), 4);
+
+    // Verify all URLs are found in the merged set
+    bool foundCrawled1 = false;
+    bool foundCrawled2 = false;
+    bool foundPending1 = false;
+    bool foundPending2 = false;
+
+    for (int i = 0; i < seen.size(); ++i) {
+        if (seen.get(i) == "http://crawled1.com") foundCrawled1 = true;
+        if (seen.get(i) == "http://crawled2.com") foundCrawled2 = true;
+        if (seen.get(i) == "http://pending1.com") foundPending1 = true;
+        if (seen.get(i) == "http://pending2.com") foundPending2 = true;
+    }
+
+    EXPECT_TRUE(foundCrawled1);
+    EXPECT_TRUE(foundCrawled2);
+    EXPECT_TRUE(foundPending1);
+    EXPECT_TRUE(foundPending2);
+}

@@ -1,10 +1,10 @@
 {
-  "tests": 60,
+  "tests": 64,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PageStorageTest",
-      "tests": 10,
+      "tests": 14,
       "testsuite": [
         {
           "name": "IsEmptyOnCreation",
@@ -55,6 +55,26 @@
           "name": "StressWriteManyPages",
           "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
           "line": 113
+        },
+        {
+          "name": "PendingUrlsSaveAndLoad",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 122
+        },
+        {
+          "name": "UpdatePendingUrlStatus",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 141
+        },
+        {
+          "name": "ResetInProgressUrls",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 158
+        },
+        {
+          "name": "GetAllSeenUrls",
+          "file": "C:\/Users\/brach\/OneDrive\/Documents\/Project-02\/tests\/PageStorageTests.cpp",
+          "line": 173
         }
       ]
     },

@@ -18,7 +18,7 @@ log_level=info
 
 # Crawl Delay
 # Delay (in milliseconds) between two requests.
-crawl_delay_ms=500
+crawl_delay_ms= 0
 
 # Page Fetcher Settings
 # URL of the Browser Adapter service.

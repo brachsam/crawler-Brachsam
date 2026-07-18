@@ -47,15 +47,76 @@ Crawler::Crawler(const std::string& configPath, const std::string& seedUrl)
     logger.info("Crawler: initialized (maxDepth=" + std::to_string(maxDepth) +
                 ", crawlDelayMs=" + std::to_string(crawlScheduler.getDelayMs()) + ")");
 
-    // Add the first URL to the Frontier.
-    URLDepth seed;
-    seed.url = seedUrl;
-    seed.depth = 0;
+    // Recover any URLs that crashed during a previous run.
+    try {
+        pageStorage.resetInProgressUrls();
+    } catch (const std::exception& e) {
+        logger.error("Crawler: failed to reset in-progress URLs: " + std::string(e.what()));
+    }
 
-    frontier.enqueue(seed);
-    seenStore.markSeen(seedUrl);
+    // Populate SeenStore with all previously seen/crawled URLs from database.
+    try {
+        DynamicArray<std::string> allSeen = pageStorage.getAllSeenUrls();
+        for (int i = 0; i < allSeen.size(); i++) {
+            seenStore.markSeen(allSeen.get(i));
+        }
+    } catch (const std::exception& e) {
+        logger.error("Crawler: failed to load seen URLs: " + std::string(e.what()));
+    }
 
-    logger.info("Crawler: seeded with " + seedUrl);
+    // Load any pending URLs from database to resume crawling (filtered by domain).
+    try {
+        // Extract host name from seedUrl to filter pending URLs.
+        std::string hostFilter = "";
+        size_t schemeEnd = 0;
+        if (seedUrl.substr(0, 8) == "https://") schemeEnd = 8;
+        else if (seedUrl.substr(0, 7) == "http://") schemeEnd = 7;
+
+        if (schemeEnd > 0) {
+            size_t hostEnd = seedUrl.find('/', schemeEnd);
+            if (hostEnd == std::string::npos) {
+                hostFilter = seedUrl.substr(schemeEnd);
+            } else {
+                hostFilter = seedUrl.substr(schemeEnd, hostEnd - schemeEnd);
+            }
+        }
+
+        DynamicArray<URLDepth> pending = pageStorage.loadPendingUrls(5000, hostFilter);
+        if (pending.size() > 0) {
+            for (int i = 0; i < pending.size(); i++) {
+                frontier.enqueue(pending.get(i));
+            }
+            logger.info("Crawler: resumed crawling with " + std::to_string(pending.size()) + 
+                        " pending URLs for domain " + hostFilter + " from database");
+        } else {
+            // No pending URLs found, check the seed URL.
+            if (pageStorage.exists(seedUrl)) {
+                std::cout << "already crawled" << std::endl;
+                logger.info("already crawled");
+            } else {
+                // Save seed URL as pending in database.
+                pageStorage.savePendingUrl(seedUrl, 0, "");
+
+                // Add the first URL to the Frontier.
+                URLDepth seed;
+                seed.url = seedUrl;
+                seed.depth = 0;
+
+                frontier.enqueue(seed);
+                seenStore.markSeen(seedUrl);
+
+                logger.info("Crawler: seeded with " + seedUrl);
+            }
+        }
+    } catch (const std::exception& e) {
+        logger.error("Crawler: initialization database query failed: " + std::string(e.what()));
+        // Fallback: Seed with seedUrl if database fails to query.
+        URLDepth seed;
+        seed.url = seedUrl;
+        seed.depth = 0;
+        frontier.enqueue(seed);
+        seenStore.markSeen(seedUrl);
+    }
 }
 
 // Destroys the Crawler object.
@@ -101,6 +162,13 @@ void Crawler::processOne(const URLDepth& item) {
     logger.info("Crawler: processing " + item.url +
                 " (depth " + std::to_string(item.depth) + ")");
 
+    // Mark the URL as IN_PROGRESS (1) in database.
+    try {
+        pageStorage.updatePendingUrlStatus(item.url, 1);
+    } catch (const std::exception& e) {
+        logger.error("Crawler: failed to update status to IN_PROGRESS for " + item.url + ": " + e.what());
+    }
+
     // Check robots.txt.
     bool allowed = true;
 
@@ -118,6 +186,9 @@ void Crawler::processOne(const URLDepth& item) {
     // Skip blocked pages.
     if (!allowed) {
         logger.info("Crawler: blocked by robots.txt: " + item.url);
+        try {
+            pageStorage.updatePendingUrlStatus(item.url, 2); // Mark completed/skipped
+        } catch (...) {}
         return;
     }
 
@@ -128,6 +199,9 @@ void Crawler::processOne(const URLDepth& item) {
         html = pageFetcher.fetch(item.url);
     } catch (const PageFetcherException& e) {
         logger.error("Crawler: fetch failed for " + item.url + ": " + e.what());
+        try {
+            pageStorage.updatePendingUrlStatus(item.url, 3); // Mark FAILED (3)
+        } catch (...) {}
         return;
     }
 
@@ -139,6 +213,7 @@ void Crawler::processOne(const URLDepth& item) {
 
     try {
         pageStorage.savePage(page);
+        pageStorage.updatePendingUrlStatus(item.url, 2); // Mark COMPLETED (2)
     } catch (const PageStorageException& e) {
 
         // Continue even if saving fails.
@@ -191,6 +266,13 @@ void Crawler::handleDiscoveredLink(const std::string& rawLink,
 
     // Mark the URL as seen.
     seenStore.markSeen(normalized);
+
+    // Save the discovered URL as pending in database.
+    try {
+        pageStorage.savePendingUrl(normalized, childDepth, baseUrl);
+    } catch (const std::exception& e) {
+        logger.error("Crawler: failed to save pending URL " + normalized + ": " + e.what());
+    }
 
     // Add the URL to the Frontier.
     URLDepth child;

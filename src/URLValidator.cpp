@@ -19,6 +19,8 @@ bool URLValidator::isValid(string url) {
     if (isBareFragment(url))   return false;
     // reject anything that is not http/https
     if (!isHttpOrHttps(url))   return false;
+    // reject media/binary files — no point crawling an image or video
+    if (isMediaFile(url))      return false;
     // if it survived all of that, it's fine
     return true;
 }
@@ -69,5 +71,48 @@ bool URLValidator::isHttpOrHttps(string url) {
     string lower = toLower(url);
     if (lower.substr(0, 7) == "http://") return true;
     if (lower.size() >= 8 && lower.substr(0, 8) == "https://") return true;
+    return false;
+}
+
+// Checks if the URL points to a media or binary file.
+// We strip the query string first (everything after ?) because
+// URLs like "photo.jpg?width=100" should still be caught.
+bool URLValidator::isMediaFile(string url) {
+    string lower = toLower(url);
+
+    // strip query parameters so "image.jpg?size=large" becomes "image.jpg"
+    size_t queryPos = lower.find('?');
+    string path = (queryPos == string::npos) ? lower : lower.substr(0, queryPos);
+
+    size_t len = path.size();
+
+    // 4-character extensions: .jpg .png .gif .mp4 .mp3 .pdf .svg .ico .zip .exe
+    if (len >= 4) {
+        string ext4 = path.substr(len - 4);
+        if (ext4 == ".jpg" || ext4 == ".png" || ext4 == ".gif" ||
+            ext4 == ".mp4" || ext4 == ".mp3" || ext4 == ".pdf" ||
+            ext4 == ".svg" || ext4 == ".ico" || ext4 == ".zip" ||
+            ext4 == ".exe" || ext4 == ".css") {
+            return true;
+        }
+    }
+
+    // 5-character extensions: .jpeg .webp .webm .woff
+    if (len >= 5) {
+        string ext5 = path.substr(len - 5);
+        if (ext5 == ".jpeg" || ext5 == ".webp" || ext5 == ".webm" ||
+            ext5 == ".woff") {
+            return true;
+        }
+    }
+
+    // 6-character extensions: .woff2
+    if (len >= 6) {
+        string ext6 = path.substr(len - 6);
+        if (ext6 == ".woff2") {
+            return true;
+        }
+    }
+
     return false;
 }

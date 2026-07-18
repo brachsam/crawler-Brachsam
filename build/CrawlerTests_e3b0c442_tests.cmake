@@ -88,6 +88,42 @@ set_tests_properties([=[PageStorageTest.StressWriteManyPages]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
+add_test([=[PageStorageTest.PendingUrlsSaveAndLoad]=]  C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests.exe [==[--gtest_filter=PageStorageTest.PendingUrlsSaveAndLoad]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PageStorageTest.PendingUrlsSaveAndLoad]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:/Users/brach/OneDrive/Documents/Project-02/tests/PageStorageTests.cpp:122]==]
+    WORKING_DIRECTORY [==[C:/Users/brach/OneDrive/Documents/Project-02/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PageStorageTest.UpdatePendingUrlStatus]=]  C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests.exe [==[--gtest_filter=PageStorageTest.UpdatePendingUrlStatus]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PageStorageTest.UpdatePendingUrlStatus]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:/Users/brach/OneDrive/Documents/Project-02/tests/PageStorageTests.cpp:141]==]
+    WORKING_DIRECTORY [==[C:/Users/brach/OneDrive/Documents/Project-02/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PageStorageTest.ResetInProgressUrls]=]  C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests.exe [==[--gtest_filter=PageStorageTest.ResetInProgressUrls]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PageStorageTest.ResetInProgressUrls]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:/Users/brach/OneDrive/Documents/Project-02/tests/PageStorageTests.cpp:158]==]
+    WORKING_DIRECTORY [==[C:/Users/brach/OneDrive/Documents/Project-02/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[PageStorageTest.GetAllSeenUrls]=]  C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests.exe [==[--gtest_filter=PageStorageTest.GetAllSeenUrls]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[PageStorageTest.GetAllSeenUrls]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:/Users/brach/OneDrive/Documents/Project-02/tests/PageStorageTests.cpp:173]==]
+    WORKING_DIRECTORY [==[C:/Users/brach/OneDrive/Documents/Project-02/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[HTMLParserTest.EmptyHtmlInput]=]  C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests.exe [==[--gtest_filter=HTMLParserTest.EmptyHtmlInput]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[HTMLParserTest.EmptyHtmlInput]=]
   PROPERTIES
@@ -538,4 +574,4 @@ set_tests_properties([=[FrontierTest.DepthPreservation]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(CrawlerTests_TESTS [==[PageStorageTest.IsEmptyOnCreation]==] [==[PageStorageTest.SaveSinglePage]==] [==[PageStorageTest.RetrieveSavedPage]==] [==[PageStorageTest.CheckPageExists]==] [==[PageStorageTest.UpdatePageOnConflict]==] [==[PageStorageTest.RetrieveMissingPageThrows]==] [==[PageStorageTest.SaveMultiplePages]==] [==[PageStorageTest.QuoteInjectionSafety]==] [==[PageStorageTest.SaveEmptyHTMLPayload]==] [==[PageStorageTest.StressWriteManyPages]==] [==[HTMLParserTest.EmptyHtmlInput]==] [==[HTMLParserTest.ExtractDoubleQuotedLink]==] [==[HTMLParserTest.ExtractSingleQuotedLink]==] [==[HTMLParserTest.HrefSpacingVariants]==] [==[HTMLParserTest.ExtractMultipleLinks]==] [==[HTMLParserTest.AnchorWithoutHref]==] [==[HTMLParserTest.AnchorWithMultipleAttributes]==] [==[HTMLParserTest.CaseInsensitiveTagMatching]==] [==[HTMLParserTest.CaseInsensitiveAttributeMatching]==] [==[HTMLParserTest.MalformedHTMLParsing]==] [==[URLValidatorTest.ValidHttpURL]==] [==[URLValidatorTest.ValidHttpsURL]==] [==[URLValidatorTest.SchemeCaseInsensitivity]==] [==[URLValidatorTest.EmptyURLRejected]==] [==[URLValidatorTest.JavascriptLinksRejected]==] [==[URLValidatorTest.MailtoLinksRejected]==] [==[URLValidatorTest.BareFragmentsRejected]==] [==[URLValidatorTest.MissingProtocolRejected]==] [==[URLValidatorTest.UnsupportedProtocolsRejected]==] [==[URLValidatorTest.ShortInvalidStringsRejected]==] [==[URLNormalizerTest.AbsoluteURLUnchanged]==] [==[URLNormalizerTest.RemoveFragments]==] [==[URLNormalizerTest.LowercaseSchemeAndHost]==] [==[URLNormalizerTest.ResolvePlainRelativeURL]==] [==[URLNormalizerTest.ResolveRootRelativeURL]==] [==[URLNormalizerTest.ResolveParentDirectoryRelativeURL]==] [==[URLNormalizerTest.RemoveRedundantTrailingSlash]==] [==[URLNormalizerTest.PreservesRootTrailingSlash]==] [==[URLNormalizerTest.RemoveEmptyQueryString]==] [==[URLNormalizerTest.PreservesValidQueryParameters]==] [==[SeenStoreTest.IsEmptyOnCreation]==] [==[SeenStoreTest.MarkSingleSeen]==] [==[SeenStoreTest.DuplicateMarkingDoesNotGrowSize]==] [==[SeenStoreTest.MultipleDifferentURLs]==] [==[SeenStoreTest.UnvisitedReturnsFalse]==] [==[SeenStoreTest.CaseSensitivityChecked]==] [==[SeenStoreTest.EmptyStringAllowed]==] [==[SeenStoreTest.LongURLAllowed]==] [==[SeenStoreTest.SpecialCharactersPreserved]==] [==[SeenStoreTest.StressMultipleMarks]==] [==[FrontierTest.IsEmptyOnCreation]==] [==[FrontierTest.EnqueueSingleElement]==] [==[FrontierTest.DequeueSingleElement]==] [==[FrontierTest.FIFOOrderMultipleElements]==] [==[FrontierTest.DequeueEmptyThrowsException]==] [==[FrontierTest.ExceptionMessageVerification]==] [==[FrontierTest.MixedEnqueueAndDequeue]==] [==[FrontierTest.SizeTrackingAccurate]==] [==[FrontierTest.DuplicatesAllowed]==] [==[FrontierTest.DepthPreservation]==])
+set(CrawlerTests_TESTS [==[PageStorageTest.IsEmptyOnCreation]==] [==[PageStorageTest.SaveSinglePage]==] [==[PageStorageTest.RetrieveSavedPage]==] [==[PageStorageTest.CheckPageExists]==] [==[PageStorageTest.UpdatePageOnConflict]==] [==[PageStorageTest.RetrieveMissingPageThrows]==] [==[PageStorageTest.SaveMultiplePages]==] [==[PageStorageTest.QuoteInjectionSafety]==] [==[PageStorageTest.SaveEmptyHTMLPayload]==] [==[PageStorageTest.StressWriteManyPages]==] [==[PageStorageTest.PendingUrlsSaveAndLoad]==] [==[PageStorageTest.UpdatePendingUrlStatus]==] [==[PageStorageTest.ResetInProgressUrls]==] [==[PageStorageTest.GetAllSeenUrls]==] [==[HTMLParserTest.EmptyHtmlInput]==] [==[HTMLParserTest.ExtractDoubleQuotedLink]==] [==[HTMLParserTest.ExtractSingleQuotedLink]==] [==[HTMLParserTest.HrefSpacingVariants]==] [==[HTMLParserTest.ExtractMultipleLinks]==] [==[HTMLParserTest.AnchorWithoutHref]==] [==[HTMLParserTest.AnchorWithMultipleAttributes]==] [==[HTMLParserTest.CaseInsensitiveTagMatching]==] [==[HTMLParserTest.CaseInsensitiveAttributeMatching]==] [==[HTMLParserTest.MalformedHTMLParsing]==] [==[URLValidatorTest.ValidHttpURL]==] [==[URLValidatorTest.ValidHttpsURL]==] [==[URLValidatorTest.SchemeCaseInsensitivity]==] [==[URLValidatorTest.EmptyURLRejected]==] [==[URLValidatorTest.JavascriptLinksRejected]==] [==[URLValidatorTest.MailtoLinksRejected]==] [==[URLValidatorTest.BareFragmentsRejected]==] [==[URLValidatorTest.MissingProtocolRejected]==] [==[URLValidatorTest.UnsupportedProtocolsRejected]==] [==[URLValidatorTest.ShortInvalidStringsRejected]==] [==[URLNormalizerTest.AbsoluteURLUnchanged]==] [==[URLNormalizerTest.RemoveFragments]==] [==[URLNormalizerTest.LowercaseSchemeAndHost]==] [==[URLNormalizerTest.ResolvePlainRelativeURL]==] [==[URLNormalizerTest.ResolveRootRelativeURL]==] [==[URLNormalizerTest.ResolveParentDirectoryRelativeURL]==] [==[URLNormalizerTest.RemoveRedundantTrailingSlash]==] [==[URLNormalizerTest.PreservesRootTrailingSlash]==] [==[URLNormalizerTest.RemoveEmptyQueryString]==] [==[URLNormalizerTest.PreservesValidQueryParameters]==] [==[SeenStoreTest.IsEmptyOnCreation]==] [==[SeenStoreTest.MarkSingleSeen]==] [==[SeenStoreTest.DuplicateMarkingDoesNotGrowSize]==] [==[SeenStoreTest.MultipleDifferentURLs]==] [==[SeenStoreTest.UnvisitedReturnsFalse]==] [==[SeenStoreTest.CaseSensitivityChecked]==] [==[SeenStoreTest.EmptyStringAllowed]==] [==[SeenStoreTest.LongURLAllowed]==] [==[SeenStoreTest.SpecialCharactersPreserved]==] [==[SeenStoreTest.StressMultipleMarks]==] [==[FrontierTest.IsEmptyOnCreation]==] [==[FrontierTest.EnqueueSingleElement]==] [==[FrontierTest.DequeueSingleElement]==] [==[FrontierTest.FIFOOrderMultipleElements]==] [==[FrontierTest.DequeueEmptyThrowsException]==] [==[FrontierTest.ExceptionMessageVerification]==] [==[FrontierTest.MixedEnqueueAndDequeue]==] [==[FrontierTest.SizeTrackingAccurate]==] [==[FrontierTest.DuplicatesAllowed]==] [==[FrontierTest.DepthPreservation]==])

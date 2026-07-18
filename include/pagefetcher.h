@@ -27,7 +27,15 @@ public:
 // PageFetcher
 //
 // Responsibility:
-// Sends URL requests to Browser Adapter and returns rendered HTML.
+// Fetches a URL and returns its HTML.
+//
+// Uses a hybrid strategy internally:
+//   1. First tries a direct HTTP GET (fast, no browser needed).
+//   2. Analyzes the raw HTML to detect SPA shell pages.
+//   3. If the page looks dynamic, falls back to Browser Adapter
+//      which uses a headless browser to render JavaScript.
+//
+// The Crawler doesn't know about any of this. It just calls fetch(url).
 //
 // PageFetcher only knows HTTP communication.
 // It does not know about Playwright, Chromium, Node.js or browser handling.
@@ -62,6 +70,23 @@ private:
         const std::string& path,
         const std::string& jsonBody
     ) const;
+
+
+    // Does a plain HTTP GET using libcurl. Returns raw HTML.
+    // This is the fast path — no browser, no JS execution.
+    // Returns empty string on any failure (timeout, 4xx, 5xx, etc.)
+    // so that fetch() can fall back to the Browser Adapter.
+    std::string directFetch(const std::string& url) const;
+
+    // Looks at raw HTML and decides if the page needs browser rendering.
+    // Returns true if the HTML looks like an empty SPA shell.
+    // Uses KMP pattern matching to scan for framework markers.
+    bool needsRendering(const std::string& html) const;
+
+    // Counts how many bytes of visible text exist inside <body>.
+    // Strips all tags and counts only non-whitespace characters.
+    // Used by needsRendering() to detect empty shell pages.
+    int countVisibleTextInBody(const std::string& html) const;
 
 
 

@@ -69,9 +69,21 @@ app.post('/fetch', async (req, res) => {
     page = await browser.newPage();
 
 
-    // Load page and wait until network becomes idle.
+    // Route requests to block images, stylesheets, fonts, and media files.
+    // This saves bandwidth, CPU, and dramatically speeds up page load times.
+    await page.route('**/*', (route) => {
+      const resourceType = route.request().resourceType();
+      if (['image', 'stylesheet', 'font', 'media'].includes(resourceType)) {
+        route.abort();
+      } else {
+        route.continue();
+      }
+    });
+
+
+    // Load page and wait until the load event fires (much faster than networkidle).
     await page.goto(url, {
-      waitUntil: 'networkidle',
+      waitUntil: 'load',
       timeout: NAVIGATION_TIMEOUT_MS,
     });
 

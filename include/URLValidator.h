@@ -23,6 +23,10 @@ private:
     bool isMailtoLink(string url);
     bool isBareFragment(string url);
     bool isHttpOrHttps(string url);
+
+    // rejects URLs that point to media/binary files instead of web pages
+    // (.jpg, .png, .jpeg, .gif, .mp4, .mp3, .pdf, .svg, .webp, .ico)
+    bool isMediaFile(string url);
  
     // lowercases a string so we're not tripped up by JavaScript:void(0)
     // or MAILTO:someone@site.com

@@ -174,6 +174,198 @@ build WebCrawler.exe: CXX_EXECUTABLE_LINKER__WebCrawler_ CMakeFiles/WebCrawler.d
   TARGET_PDB = WebCrawler.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\WebCrawler.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target CrawlerTests
+
+
+#############################################
+# Order-only phony target for CrawlerTests
+
+build cmake_object_order_depends_target_CrawlerTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles/CrawlerTests.dir/tests/FrontierTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/FrontierTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\FrontierTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/tests/SeenStoreTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/SeenStoreTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\SeenStoreTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/tests/URLNormalizerTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/URLNormalizerTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\URLNormalizerTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/tests/URLValidatorTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/URLValidatorTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\URLValidatorTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/tests/HTMLParserTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/HTMLParserTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\HTMLParserTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/tests/PageStorageTests.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/tests/PageStorageTests.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\tests\PageStorageTests.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\tests
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/frontier.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/frontier.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\frontier.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/URLNormalizer.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/URLNormalizer.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\URLNormalizer.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/URLValidator.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/URLValidator.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\URLValidator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/robotsHandler.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/robotsHandler.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\robotsHandler.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/pagestorage.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/pagestorage.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\pagestorage.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/configmanager.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/configmanager.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\configmanager.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/logger.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/logger.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\logger.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/seenstore.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/seenstore.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\seenstore.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/pagefetcher.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/pagefetcher.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\pagefetcher.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/htmlParser.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/htmlParser.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\htmlParser.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/kmp.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/kmp.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\kmp.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/crawler.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/crawler.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\crawler.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+build CMakeFiles/CrawlerTests.dir/src/crawlSchedular.cpp.obj: CXX_COMPILER__CrawlerTests_unscanned_ C$:/Users/brach/OneDrive/Documents/Project-02/src/crawlSchedular.cpp || cmake_object_order_depends_target_CrawlerTests
+  DEP_FILE = CMakeFiles\CrawlerTests.dir\src\crawlSchedular.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/brach/OneDrive/Documents/Project-02/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/DynamicArray -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/LinkedList -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/HashMap -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/RedisLite -IC:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/include/Exceptions -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/include -isystem C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\CrawlerTests.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CrawlerTests
+
+
+#############################################
+# Link the executable CrawlerTests.exe
+
+build CrawlerTests.exe CrawlerTests_e3b0c442_tests.cmake | ${cmake_ninja_workdir}CrawlerTests_e3b0c442_tests.cmake: CXX_EXECUTABLE_LINKER__CrawlerTests_ CMakeFiles/CrawlerTests.dir/tests/FrontierTests.cpp.obj CMakeFiles/CrawlerTests.dir/tests/SeenStoreTests.cpp.obj CMakeFiles/CrawlerTests.dir/tests/URLNormalizerTests.cpp.obj CMakeFiles/CrawlerTests.dir/tests/URLValidatorTests.cpp.obj CMakeFiles/CrawlerTests.dir/tests/HTMLParserTests.cpp.obj CMakeFiles/CrawlerTests.dir/tests/PageStorageTests.cpp.obj CMakeFiles/CrawlerTests.dir/src/frontier.cpp.obj CMakeFiles/CrawlerTests.dir/src/URLNormalizer.cpp.obj CMakeFiles/CrawlerTests.dir/src/URLValidator.cpp.obj CMakeFiles/CrawlerTests.dir/src/robotsHandler.cpp.obj CMakeFiles/CrawlerTests.dir/src/pagestorage.cpp.obj CMakeFiles/CrawlerTests.dir/src/configmanager.cpp.obj CMakeFiles/CrawlerTests.dir/src/logger.cpp.obj CMakeFiles/CrawlerTests.dir/src/seenstore.cpp.obj CMakeFiles/CrawlerTests.dir/src/pagefetcher.cpp.obj CMakeFiles/CrawlerTests.dir/src/htmlParser.cpp.obj CMakeFiles/CrawlerTests.dir/src/kmp.cpp.obj CMakeFiles/CrawlerTests.dir/src/crawler.cpp.obj CMakeFiles/CrawlerTests.dir/src/crawlSchedular.cpp.obj | C$:/msys64/ucrt64/lib/libsqlite3.dll.a C$:/msys64/ucrt64/lib/libcurl.dll.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libsqlite3.dll.a  C:/msys64/ucrt64/lib/libcurl.dll.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CrawlerTests.dir
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build && "C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/brach/OneDrive/Documents/Project-02/build/CrawlerTests_e3b0c442_discovery.cmake -- "
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = CrawlerTests.exe
+  TARGET_IMPLIB = libCrawlerTests.dll.a
+  TARGET_PDB = CrawlerTests.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\CrawlerTests.dir
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build && "C:\Program Files\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
 
 #############################################
 # Utility command for edit_cache
@@ -711,6 +903,18 @@ build external/ds_library-Brachsam/CollectionTests.exe external/ds_library-Brach
 
 
 #############################################
+# Utility command for test
+
+build external/ds_library-Brachsam/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build\external\ds_library-Brachsam && "C:\Program Files\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build external/ds_library-Brachsam/test: phony external/ds_library-Brachsam/CMakeFiles/test.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build external/ds_library-Brachsam/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -779,6 +983,18 @@ build external/ds_library-Brachsam/install/strip: phony external/ds_library-Brac
 # Write statements declared in CMakeLists.txt:
 # C:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/CMakeLists.txt
 # =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build external/ds_library-Brachsam/external/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build\external\ds_library-Brachsam\external\googletest && "C:\Program Files\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build external/ds_library-Brachsam/external/googletest/test: phony external/ds_library-Brachsam/external/googletest/CMakeFiles/test.util
 
 
 #############################################
@@ -919,6 +1135,18 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_ external/ds_li
 
 
 #############################################
+# Utility command for test
+
+build external/ds_library-Brachsam/external/googletest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build\external\ds_library-Brachsam\external\googletest\googlemock && "C:\Program Files\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build external/ds_library-Brachsam/external/googletest/googlemock/test: phony external/ds_library-Brachsam/external/googletest/googlemock/CMakeFiles/test.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build external/ds_library-Brachsam/external/googletest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -1056,6 +1284,18 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_ external/ds_li
 
 
 #############################################
+# Utility command for test
+
+build external/ds_library-Brachsam/external/googletest/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\brach\OneDrive\Documents\Project-02\build\external\ds_library-Brachsam\external\googletest\googletest && "C:\Program Files\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build external/ds_library-Brachsam/external/googletest/googletest/test: phony external/ds_library-Brachsam/external/googletest/googletest/CMakeFiles/test.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build external/ds_library-Brachsam/external/googletest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -1127,6 +1367,8 @@ build CollectionTests: phony external/ds_library-Brachsam/CollectionTests.exe
 
 build CollectionTests.exe: phony external/ds_library-Brachsam/CollectionTests.exe
 
+build CrawlerTests: phony CrawlerTests.exe
+
 build DynamicArray: phony external/ds_library-Brachsam/DynamicArray.exe
 
 build DynamicArray.exe: phony external/ds_library-Brachsam/DynamicArray.exe
@@ -1169,7 +1411,7 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: C:/Users/brach/OneDrive/Documents/Project-02/build
 
-build all: phony WebCrawler.exe external/ds_library-Brachsam/all
+build all: phony WebCrawler.exe CrawlerTests.exe external/ds_library-Brachsam/all
 
 # =============================================================================
 
@@ -1206,7 +1448,7 @@ build external/ds_library-Brachsam/external/googletest/googletest/all: phony lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/brach/OneDrive/Documents/Project-02/build/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googlemock/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googletest/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googlemock/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindCURL.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindOpenSSL.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPkgConfig.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindSQLite3.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindZLIB.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/GoogleTest.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/SelectLibraryConfigurations.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/cmake/gmock.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/cmake/gmock_main.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/Config.cmake.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/gtest.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/gtest_main.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/internal_utils.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLConfig.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLTargets-release.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLTargets.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindBrotli.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibidn2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibpsl.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibssh2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGHTTP2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGHTTP3.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGTCP2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindZstd.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeSystem.cmake
+build build.ninja C$:/Users/brach/OneDrive/Documents/Project-02/build/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googlemock/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googletest/cmake_install.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googlemock/CTestTestfile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/build/external/ds_library-Brachsam/external/googletest/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDependentOption.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindCURL.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindOpenSSL.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindPkgConfig.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindSQLite3.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/FindZLIB.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/GoogleTest.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/SelectLibraryConfigurations.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/brach/OneDrive/Documents/Project-02/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/cmake/gmock.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googlemock/cmake/gmock_main.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/CMakeLists.txt C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/Config.cmake.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/gtest.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/gtest_main.pc.in C$:/Users/brach/OneDrive/Documents/Project-02/external/ds_library-Brachsam/external/googletest/googletest/cmake/internal_utils.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLConfig.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLTargets-release.cmake C$:/msys64/ucrt64/lib/cmake/CURL/CURLTargets.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindBrotli.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibidn2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibpsl.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindLibssh2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGHTTP2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGHTTP3.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindNGTCP2.cmake C$:/msys64/ucrt64/lib/cmake/CURL/FindZstd.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake C$:/msys64/ucrt64/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc2/CMakeSystem.cmake
   pool = console
 
 

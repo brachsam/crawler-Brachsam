@@ -88,3 +88,48 @@ target_link_libraries(WebCrawler
         CURL::libcurl
         nlohmann_json::nlohmann_json
 )
+
+# ==========================
+# Unit Tests Target
+# ==========================
+enable_testing()
+
+set(TEST_SOURCES
+    tests/FrontierTests.cpp
+    tests/SeenStoreTests.cpp
+    tests/URLNormalizerTests.cpp
+    tests/URLValidatorTests.cpp
+    tests/HTMLParserTests.cpp
+    tests/PageStorageTests.cpp
+    src/frontier.cpp
+    src/URLNormalizer.cpp
+    src/URLValidator.cpp
+    src/robotsHandler.cpp
+    src/pagestorage.cpp
+    src/configmanager.cpp
+    src/logger.cpp
+    src/seenstore.cpp
+    src/pagefetcher.cpp
+    src/htmlParser.cpp
+    src/kmp.cpp
+    src/crawler.cpp
+    src/crawlSchedular.cpp
+)
+
+add_executable(CrawlerTests ${TEST_SOURCES})
+target_include_directories(CrawlerTests
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+target_link_libraries(CrawlerTests
+    PRIVATE
+        Collections
+        SQLite3::SQLite3
+        CURL::libcurl
+        nlohmann_json::nlohmann_json
+        gtest
+        gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(CrawlerTests)

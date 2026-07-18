@@ -2,9 +2,9 @@
   "name": "browser-adapter",
   "version": "1.0.0",
   "description": "HTTP service that uses Playwright to fetch rendered HTML for the C++ crawler.",
-  "main": "browser_adapter.js",
+  "main": "browserAdapter.js",
   "scripts": {
-    "start": "node browser_adapter.js"
+    "start": "node browserAdapter.js"
   },
   "dependencies": {
     "express": "^4.22.2",

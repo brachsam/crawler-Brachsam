@@ -34,10 +34,22 @@ bool HTMLParser::isValidAnchorTagBoundary(const std::string& lowerHtml, int pos)
 
 // Extracts the href value from an anchor tag.
 std::string HTMLParser::extractHrefValue(const std::string& html, int hrefPos) const {
-    int valueStart = hrefPos + 5; // Skip "href="
+    int idx = hrefPos + 4; // Skip "href"
+    while (idx < (int)html.size() && std::isspace((unsigned char)html[idx])) {
+        idx++;
+    }
+    if (idx >= (int)html.size() || html[idx] != '=') {
+        return "";
+    }
+    idx++; // Skip '='
+    while (idx < (int)html.size() && std::isspace((unsigned char)html[idx])) {
+        idx++;
+    }
+    if (idx >= (int)html.size()) {
+        return "";
+    }
 
-    if (valueStart >= (int) html.size()) return "";
-
+    int valueStart = idx;
     char quoteChar = html[valueStart];
 
     // Handle quoted href values.
@@ -95,7 +107,36 @@ DynamicArray<std::string> HTMLParser::extractLinks(const std::string& html) cons
         std::string tagSlice = lowerHtml.substr(pos, tagEnd - pos + 1);
 
         // Find the href attribute.
-        int hrefOffsetInSlice = KMP::searchFirst(tagSlice, "href=");
+        int hrefOffsetInSlice = KMP::searchFirst(tagSlice, "href");
+
+        while (hrefOffsetInSlice != -1) {
+            // Verify that the "href" we found is not part of another word (e.g. "sharehref").
+            // It should be preceded by a whitespace character or the start of the tag after "<a".
+            bool validPrefix = false;
+            if (hrefOffsetInSlice > 0) {
+                char prev = tagSlice[hrefOffsetInSlice - 1];
+                if (std::isspace((unsigned char)prev)) {
+                    validPrefix = true;
+                }
+            }
+
+            // Check if it is followed by '=' (possibly with spaces in between).
+            bool hasEquals = false;
+            int idx = hrefOffsetInSlice + 4; // Skip "href"
+            while (idx < (int)tagSlice.size() && std::isspace((unsigned char)tagSlice[idx])) {
+                idx++;
+            }
+            if (idx < (int)tagSlice.size() && tagSlice[idx] == '=') {
+                hasEquals = true;
+            }
+
+            if (validPrefix && hasEquals) {
+                break;
+            }
+
+            // Search for the next "href" in tagSlice
+            hrefOffsetInSlice = KMP::searchFirst(tagSlice, "href", hrefOffsetInSlice + 4);
+        }
 
         // Skip if href is not present.
         if (hrefOffsetInSlice == -1)
