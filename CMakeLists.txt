@@ -64,6 +64,23 @@ set(SOURCES
     src/crawlSchedular.cpp
 )
 
+# Indexer source files
+set(INDEXER_SOURCES
+    src/Indexer/Normalizer.cpp
+    src/Indexer/Tokenizer.cpp
+    src/Indexer/StopWordFilter.cpp
+    src/Indexer/TextExtractor.cpp
+    src/Indexer/TermFrequencyCounter.cpp
+    src/Indexer/InvertedIndexBuilder.cpp
+    src/Indexer/DocumentReader.cpp
+    src/Indexer/IndexStorage.cpp
+    src/Indexer/Indexer.cpp
+    src/Indexer/indexer_main.cpp
+    src/pagestorage.cpp
+    src/logger.cpp
+    src/configmanager.cpp
+)
+
 # ==========================
 # Executable
 # ==========================
@@ -90,6 +107,22 @@ target_link_libraries(WebCrawler
 )
 
 # ==========================
+# Indexer Executable
+# ==========================
+add_executable(Indexer ${INDEXER_SOURCES})
+
+target_include_directories(Indexer
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+target_link_libraries(Indexer
+    PRIVATE
+        Collections
+        SQLite3::SQLite3
+)
+
+# ==========================
 # Unit Tests Target
 # ==========================
 enable_testing()
@@ -101,6 +134,7 @@ set(TEST_SOURCES
     tests/URLValidatorTests.cpp
     tests/HTMLParserTests.cpp
     tests/PageStorageTests.cpp
+    tests/IndexerTests.cpp
     src/frontier.cpp
     src/URLNormalizer.cpp
     src/URLValidator.cpp
@@ -114,6 +148,15 @@ set(TEST_SOURCES
     src/kmp.cpp
     src/crawler.cpp
     src/crawlSchedular.cpp
+    src/Indexer/Normalizer.cpp
+    src/Indexer/Tokenizer.cpp
+    src/Indexer/StopWordFilter.cpp
+    src/Indexer/TextExtractor.cpp
+    src/Indexer/TermFrequencyCounter.cpp
+    src/Indexer/InvertedIndexBuilder.cpp
+    src/Indexer/DocumentReader.cpp
+    src/Indexer/IndexStorage.cpp
+    src/Indexer/Indexer.cpp
 )
 
 add_executable(CrawlerTests ${TEST_SOURCES})

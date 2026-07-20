@@ -1,4 +1,5 @@
 C:/Users/brach/OneDrive/Documents/Project-02/build/CMakeFiles/WebCrawler.dir
+C:/Users/brach/OneDrive/Documents/Project-02/build/CMakeFiles/Indexer.dir
 C:/Users/brach/OneDrive/Documents/Project-02/build/CMakeFiles/CrawlerTests.dir
 C:/Users/brach/OneDrive/Documents/Project-02/build/CMakeFiles/test.dir
 C:/Users/brach/OneDrive/Documents/Project-02/build/CMakeFiles/edit_cache.dir
